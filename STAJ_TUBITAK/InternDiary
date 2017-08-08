@@ -1,5 +1,15 @@
 TUBITAK MAM INTERNSHIP DIARY
 
+Day 7
+Up till now I was given the task to learn about the STMicrocontroller STM32F407. I am reading the presentations about the
+programming also yesterday I made a research on which components can be used in the design of the board. Which parameters
+affect what in DigiKey and I selected  bunch of inductors, capacitors, mosfets and diodes. Yet, I forgot to take that paper
+with me today so I will add the list later and also the one which we will construct with Mustafa Abi:) By the way, I studied
+on the MATLAB model I made. The model works as approximated with a ramp D however when I try to control it, it seems like
+something is getting out of control:D Donno why but I do not think it matters right at the moment. I will ask whether Arduino
+can be used instead of ST. This way, I may learn about it moure and this will be very helpful for the next year's project :D
+Till more happen!
+
 Day4
 Perturb and Observe Method(wind and photovolataic systems Max. Power Point Tracking Control) research
 Converter schematics found in the internet for control
