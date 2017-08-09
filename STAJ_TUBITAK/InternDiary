@@ -1,4 +1,9 @@
 TUBITAK MAM INTERNSHIP DIARY
+Day 8
+I switched to Arduino and read documents about AVR Microcontrollers and inquired AT32u4 datasheet in detail. Research on
+interrupt conducted. Lots of information on Atler's microcontroller.Tried some sketches. But there is a connection problem
+either in my computer or the Arduino Leonardo board, since the led light goes on and off from time to time.
+
 
 Day 7
 Up till now I was given the task to learn about the STMicrocontroller STM32F407. I am reading the presentations about the
