@@ -30,6 +30,8 @@ If we put a linear output voltage regulator which will definetely require a heat
 constant  but the current also remains same. That is power consumotion will increase and this is not required of course.
 
 
+
+
 Day 8
 I switched to Arduino and read documents about AVR Microcontrollers and inquired AT32u4 datasheet in detail. Research on
 interrupt conducted. Lots of information on Atler's microcontroller.Tried some sketches. But there is a connection problem
