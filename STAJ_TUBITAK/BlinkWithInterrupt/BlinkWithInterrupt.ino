@@ -6,7 +6,7 @@ volatile byte State=LOW;
 
 void setup() {
   pinMode(LedPin,OUTPUT);
-  pinMode(InterruptPin,INPUT);
+  pinMode(InterruptPin,INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(InterruptPin),myISR,CHANGE);
 }
 

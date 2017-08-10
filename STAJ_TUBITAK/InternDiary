@@ -1,4 +1,35 @@
 TUBITAK MAM INTERNSHIP DIARY
+
+10.8.17
+Till noon, with Mustafa Bey, we have started to draw the schematic on Protheus, I learned how to create a component
+that does not exist in the library reading the datasheet and also to draw a component whose PCB drawing is existent
+but not the circuit component that I learned to first draw a component and then link the PCB drawing to this.
+I also solved this so-called "connection" problem. It was in the code. Now in the Classex code two diodes are turned on-off
+using two different classes.
+
+After the noon, the design on schematic is completed with an Arduino addition and voltage and current sensing circuits.
+Here, TLP250 is used for gate driving. It has totem pole inside and this provides a fast turn on and off. However, the
+source of the mosfet is not grounded and this creates a problem during swtiching. Therefore we connect TMA0515s flyback
+converter's output to Vcc and source of the Fet. Also there is a capacitor which will provide the vcc needed when
+flyback is off(?? Ask this again)
+
+for voltage sensing at the output where battery is connected we put an rc filter and get the voltage as analog input to
+arduino. Yet, this is not so easy for current reading. We will connect a resistor in series with the battery with the
+acknowledgement that we do not desire the power dissipated on the resistor to be large. Therefore, approximating that
+out power is around 9 W and the battery voltage will be around 3 V, Current we see will be around 3 A maximum (MPP). If
+we put a boundary to this dissipated power on the resistor as 0.1 W then we will need a o.o1 ohm resistance. Taking the
+voltage read from the positive side of the reisitor since the negative side is ground, we will observe a very small (30mv)
+voltage at this point which will not be enough for the arduino to read. Hence, for scaling this voltage, I put a single
+fed noninverting amplifier opamp.
+
+In reality there is the problem of providing this 5 V for the arduino  and the rest o the system. It is found reasonable
+to drive this voltage from the solar panel as well since using a supply when we are trying to charge one looked funny.
+Therefore we will need a regulator which will supply a constant 5 V. For this smps (switch mode power supply) is found
+appropriate. 78.. series (7805 is the one we will use) cuts the power cınssumption and reduce heat dis. size and weight.
+If we put a linear output voltage regulator which will definetely require a heat sink. Linear means the output voltage is
+constant  but the current also remains same. That is power consumotion will increase and this is not required of course.
+
+
 Day 8
 I switched to Arduino and read documents about AVR Microcontrollers and inquired AT32u4 datasheet in detail. Research on
 interrupt conducted. Lots of information on Atler's microcontroller.Tried some sketches. But there is a connection problem
