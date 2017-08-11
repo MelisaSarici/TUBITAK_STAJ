@@ -1,5 +1,14 @@
 TUBITAK MAM INTERNSHIP DIARY
 
+11.8.17
+Today, since Mustafa Bey was not present in the office and for a correct and complete PCB design, I need his guidance
+I read about the PCB design document I added in the folder in detail. The document presents very important factors.
+It is vital to create the component packages that we will use here like th inductor which we will wind by hand. Since
+this is required before putting the components on the PCB, I asked Gürkan Bey for inductor winding and I had another
+research homework before Monday. He provided me a link in coursera of a professor in Colarado University (https://www.coursera.org/learn/electronic-converters/lecture/wnntf/inductance)
+which is helpful to remind me the basic contents. ıt is refreshing but I could not complete the whole videos yet.
+
+
 10.8.17
 Till noon, with Mustafa Bey, we have started to draw the schematic on Protheus, I learned how to create a component
 that does not exist in the library reading the datasheet and also to draw a component whose PCB drawing is existent
