@@ -1,4 +1,9 @@
 TUBITAK MAM INTERNSHIP DIARY
+14.8.17
+We have calculated the turn numbers and the model for the inductor (approx. 17 turns with etd 39) and added the
+package in proteus. I have learned about the surface mount opamp and we decided to use ad8605 which has a 50uV
+offset voltage (which is very low when compared to the lm348's mV level offset) we could have used op277 as well.
+
 
 11.8.17
 Today, since Mustafa Bey was not present in the office and for a correct and complete PCB design, I need his guidance
