@@ -1,33 +1,30 @@
 
-#define Pmax 0
-#define previous_t  0
-#define D 0
 
-class Power {
+void setup() {
+  Serial.begin(9600);
+ 
+}
 
-  long P;
-  long V;
-  long I;
-  long Increment_value;
-  long T;
-  long reading_period;
-  unsigned long last_t;
-  int Current;
-  int Voltage;
-  
-  public: Power(long T,int current, int voltage,long increment_value){
+void loop() {
+  float DUTYcycle=power();
+  analogWrite(5,DUTYcycle);
+
+}
+
+
+
+float power(){
+      int T= 1000;
       unsigned long last_t=millis();
-
-      Voltage=voltage;
-      Current=current; 
-      Increment_value= increment_value;   
-      pinMode(current,INPUT);
-      pinMode(voltage,INPUT);
-    };
-
-
-    void power(){
-       unsigned long last_t=millis();
+      int Current = A0;
+      int Voltage = A1;
+      float D=0;
+      float P;
+      float I;
+      float V;
+      float Increment_value=0.01;
+      int Pmax=0;
+      float DC;
       
       if (last_t==T){
         I=analogRead(Current);
@@ -44,53 +41,8 @@ class Power {
               D==D-Increment_value;
               }
           }
-          return D;   
-      }   
-      }
+          DC=D*255;
+          return DC;   
   
-  };
-
-
-/////////////////////////////////////////////
-void pwm_control(long D,int pin){
-
-  int f;//the predetermined frequency of the signal
-
-  unsigned long time_on=(1/f)*D;
-  unsigned long time_off=(1/f)*(1-D);
-  pinState=HIGH;
-
-while(1){
- 
-  if  (pinState=HIGH){
-    digitalWrite(pin,pinState);
-    if ((millis()-last_time)==time_on){
-      pinState=LOW;
-      last_time=millis();
-      }
   }
-      else if (pinState=LOW){
-        digitalWrite(pin,pinState);
-        if ((millis()-last_time)==time_off)){
-          pinState=HIGH;
-          last_time=millis();
-          
-          }
-        }
-}
-
-  }
-  ///////////////////////////////////////
-
-Power(5,5,5,5);
-
-void setup() {
-  Serial.begin(9600);
-  int PWM_pin=;
-}
-
-void loop() {
-  D=Power.power();
-  pwm_control(D,PWM_pin);
-
 }

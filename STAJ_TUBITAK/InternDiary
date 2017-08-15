@@ -1,13 +1,34 @@
 TUBITAK MAM INTERNSHIP DIARY
+
+15.8.17
+
+The packages are completed in Proteus. Coming to their arrangement on the board, I have learned the fact that when
+MOSFET is closed we assume that its current is cut. However, because of  the loop which is created due to the connection
+of the elements, there will be a stray inductance created (1cm of copper introduces 5nH inductance!) The current that flows in the circuit and the inductor before the
+MOSFET will flow into the parasitic capacitor across the drain-source of the MOSFET. The current changes abruptly due to
+switching which will introduce a voltage ripple across the Vds of MOSFET. This is not desired since it will damage the MOSFET.
+We know from electromagnetics that, B created within a volume means energy storage. This energy will be stored in this inductance
+(stray). The more the current flows, the more the B will be present. B^2*V/(2u0)=L*I^2/2 Here B and I are directly related, we can
+give their ratio a constant. This shows us that the inductance is related with the volume as well. Then, if we can minimize this
+volume, we can minimize the L and also the energy stored in the loop. For this reason we need to put the componenets at the mos-panel
+side terminal of the board as close as possible(giving enough space for the heatsinks).
+For the 2000uF capacitor we are using electrolyticcap which has an inductance in itself due to the aluminum sheets cyclindrical packaging.
+Not to add this inductance to the already existing loop, we are putting a film capacitor across it, so close as the mosfet for area
+minimization. (100nF)
+
+I used a PWM that Arduino itself creates with its internal clock. meanwhile I called a function which takes measurements every 1000msec.
+Program can be uploaded but I will try to run it on the solar model proteus.
+
+
 14.8.17
 We have calculated the turn numbers and the model for the inductor (approx. 17 turns with etd 39) and added the
 package in proteus. I have learned about the surface mount opamp and we decided to use ad8605 which has a 50uV
 offset voltage (which is very low when compared to the lm348's mV level offset) we could have used op277 as well.
 Tomorrow:
-[] Make the arduino package in Proteus
+[+] Make the arduino package in Proteus
 [] Wind the inductor
 []Complete the board and send it for production
-[]Look at the Arduino code and the errors
+[+]Look at the Arduino code and the errors
 
 
 11.8.17
