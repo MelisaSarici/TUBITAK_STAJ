@@ -1,5 +1,16 @@
 TUBITAK MAM INTERNSHIP DIARY
 
+18.8.17 12.08
+Till now, I have completed to collect the components and decide which one is better for each individual operation.
+I have completed the Proteus circuitry and also drawn the PCB board for many times since each time a new component was
+added or something was changed. Now the board is complete for manufacturing. (We have manipulated the opamp circ. it will
+be SMD and a filter is added and grounding is important for accurate measurement and comparison also 0.01 ohm is SMD)(The
+loop containing the gate driver output and mosfet and Cin and diode are critical since it is the AC loop which creates the
+undesired stray inductance and swinging in the voltage. On the other hand the inductance_buck and the rest are not critical
+for distance. HOwever it is vital to notice that these and the output side of the circuit are high current carrying parts
+therefore it is important to draw the tracks thick enough to prevent extra temperature rise (above 15 degrees))
+
+
 15.8.17
 
 The packages are completed in Proteus. Coming to their arrangement on the board, I have learned the fact that when
