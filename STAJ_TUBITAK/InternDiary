@@ -1,5 +1,26 @@
 TUBITAK MAM INTERNSHIP DIARY
 
+22.8.17
+I had the board completed and made the appropriate connections with the solar panel and a power bank battery. I needed to
+correct the connection errors on the board due to the analog input pins and I made the corrections on the Arduino code.
+(The scaling to 4.5 V since Arduino provides 4.5 V as Vcc output.) I controlled the voltages across the board with
+multimeter to find what is wrong with the system. I corrected the grounding problem. The code runs with the problem of
+not decrementing when reached to P max. Also the current reading has the problem that the voltage drop across 10 mohm
+resistance is so small that when scaled it may remain either out of the scale of Arduino Analog-Digital conversion or it is
+distorted with some noise or something so it looks like not reliable to me. I will try to solve these two problems tomorrow.
+
+
+
+21.8.17
+The board during manufacturing, had many problems first due to my first experience of drawing a PCB and not exactly
+conmprehending the concept of bottom and top view stuff. However now we have passed this problem. I realized that while
+I wanted to make a compact PCB, I accidentally made it really small :D Hence it was really hard to put the components
+when we had the board in real-world scale:D It would be finished had we only two SMD components at eye-sight. They are
+the opamp with 50uV offset and 10mohm resistor. I hope they exist in the lab as Mustafa Abi foresought or else I will
+need to go to Konya sokak to get them :C and this is my last week and I want to get to the step where I can use this code
+I wrote for Arduino and test it!
+
+
 18.8.17 12.08
 Till now, I have completed to collect the components and decide which one is better for each individual operation.
 I have completed the Proteus circuitry and also drawn the PCB board for many times since each time a new component was
