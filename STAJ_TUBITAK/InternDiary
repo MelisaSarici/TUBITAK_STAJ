@@ -1,5 +1,14 @@
 TUBITAK MAM INTERNSHIP DIARY
 
+23.8.17 !2.31
+Vohooo I made it work!!!!
+Fisrt of all, the reason why I could not measure current was simply the fuse I used fpr protection had burnt :D So I changed
+ it and I started to measure current again. However the probblem  with the power and duty had remained until I got help for debugging
+the code from Yusuf Bey and defining a term globally instead of private made it work. Also I put the solar panel to the sun and now, it has
+the maximum voltage around 30 V at its terminals and I saw the battery charging :D Until I detect another problem in detail, everything
+looks fine up till now!
+
+
 22.8.17
 I had the board completed and made the appropriate connections with the solar panel and a power bank battery. I needed to
 correct the connection errors on the board due to the analog input pins and I made the corrections on the Arduino code.
