@@ -1,7 +1,13 @@
 TUBITAK MAM INTERNSHIP DIARY
 
-23.8.17 !2.31
-Vohooo I made it work!!!!
+23.8.17 [Updated]
+
+Of course I detected something wrong. Due to the elements I use in the supply side of the system, the voltage tha is supplied
+to the rest of the system dramatically drops. I measure 30 V without any connection and it drops to 6 v with 0 duty cycle.
+This causes a very large loss before coming to the battery. Hence we will disconnect the 7805 and TLP250 tomorrow to see the
+capability of the buck converter itself.
+
+[-]Vohooo I made it work!!!!
 Fisrt of all, the reason why I could not measure current was simply the fuse I used fpr protection had burnt :D So I changed
  it and I started to measure current again. However the probblem  with the power and duty had remained until I got help for debugging
 the code from Yusuf Bey and defining a term globally instead of private made it work. Also I put the solar panel to the sun and now, it has
